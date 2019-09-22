@@ -458,7 +458,7 @@ function _asyncToGenerator(fn) {
 
 var api = require("./api/nodeApi");
 var accountHistoryApi = require("./api/getAccountHistory")(false);
-var operations = require("bitsharesjs").ChainTypes.operations;
+var operations = require("tuscjs").ChainTypes.operations;
 var ops = Object.keys(operations);
 var fs = require("fs");
 var utils = require("./utils");

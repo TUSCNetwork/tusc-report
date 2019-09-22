@@ -1,8 +1,8 @@
-This is an import script for getting Bitshares transactions into the CoinTracking.info site. It also includes a Poloniex history parser that groups orders by order number and reformats deposit/withdrawal history in the standard CoinTracking csv format.
+This is an import script for getting TUSC transactions into the CoinTracking.info site. It also includes a Poloniex history parser that groups orders by order number and reformats deposit/withdrawal history in the standard CoinTracking csv format.
 
-[CoinTracking](https://cointracking.info) is a portfolio website for tracking cryptocurrency assets. They have lots of exchanges and blockchains already integrated with the site to import automatically, but [Bitshares](https://bitshares.org/) is not one of them. However, they do have a "Bulk CSV Import" option to add in data from different exchanges that don't have a dedicated import option.
+[CoinTracking](https://cointracking.info) is a portfolio website for tracking cryptocurrency assets. They have lots of exchanges and blockchains already integrated with the site to import automatically, but [TUSC](https://tusc.network/) is not one of them. However, they do have a "Bulk CSV Import" option to add in data from different exchanges that don't have a dedicated import option.
 
-This script uses the [`bitsharesjs-ws`](https://github.com/bitshares/bitsharesjs-ws) library to make a connection to the Bitshares blockchain, fetches all transactions for a given user, and converts it to a CSV file that can be imported into CoinTracking.
+This script uses the [`tuscjs-ws`](https://github.com/TUSCNetwork/tuscjs-ws) library to make a connection to the TUSC blockchain, fetches all transactions for a given user, and converts it to a CSV file that can be imported into CoinTracking.
 
 [![cc-by-sa](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-sa/4.0/)
 
@@ -15,7 +15,7 @@ npm install
 npm start myUsername [debug] [no_grouping] [op_type_filter]
 ```
 
-Replace `myUsername` with the Bitshares user you wish to make a report for. Since Bitshares data is completely open, there are no login credentials needed to get a full transaction report on any user.
+Replace `myUsername` with the TUSC user you wish to make a report for. Since TUSC data is completely open, there are no login credentials needed to get a full transaction report on any user.
 
 The debug, no_grouping and op_type_filter parameters are optional.
 `debug = true|false, default = false`

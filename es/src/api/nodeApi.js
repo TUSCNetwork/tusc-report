@@ -1,7 +1,7 @@
 var config = require("../config");
-var bts = require("bitsharesjs-ws");
+var bts = require("tuscjs-ws");
 
-var _require = require("bitsharesjs"),
+var _require = require("tuscjs"),
     ChainTypes = _require.ChainTypes,
     ChainStore = _require.ChainStore,
     FetchChain = _require.FetchChain;

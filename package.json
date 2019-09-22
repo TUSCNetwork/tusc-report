@@ -1,10 +1,10 @@
 {
-  "name": "bitshares-report",
-  "version": "0.2.1",
-  "description": "Create a CSV export of content from the Bitshares Blockchain for use with Cointracking.info",
+  "name": "tusc-report",
+  "version": "0.0.1",
+  "description": "Create a CSV export of content from the TUSC Blockchain for use with Cointracking.info",
   "main": "./dist/index.js",
   "jsnext:main": "./es/index.js",
-  "author": "svk31",
+  "author": "RarelyCharles",
   "license": "MIT",
   "dependencies": {
     "async": "^2.6.0",
@@ -29,10 +29,10 @@
     "pretty-quick": "^1.4.1",
     "rimraf": "^2.6.1",
     "uglify-js": "^3.3.10",
-    "bitsharesjs": "^1.8.0"
+    "tuscjs": "^0.0.1"
   },
   "peerDependencies": {
-    "bitsharesjs": "^1.8.0"
+    "tuscjs": "^0.0.1"
   },
   "scripts": {
     "start": "cross-env NODE_ENV=node node lib/src/app.js",

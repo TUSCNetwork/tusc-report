@@ -1,6 +1,6 @@
 "use strict";
 
-var bts = require("bitsharesjs-ws");
+var bts = require("tuscjs-ws");
 var fetchClient = void 0;
 
 module.exports = function(isBrowser) {

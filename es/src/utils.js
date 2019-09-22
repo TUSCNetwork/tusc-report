@@ -1,4 +1,4 @@
-var _require = require("bitsharesjs"),
+var _require = require("tuscjs"),
     ChainStore = _require.ChainStore;
 
 function precisionToRatio(p) {

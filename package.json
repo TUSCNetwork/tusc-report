@@ -29,10 +29,10 @@
     "pretty-quick": "^1.4.1",
     "rimraf": "^2.6.1",
     "uglify-js": "^3.3.10",
-    "tuscjs": "^0.0.1"
+    "tuscjs": "^0.0.3"
   },
   "peerDependencies": {
-    "tuscjs": "^0.0.1"
+    "tuscjs": "^0.0.3"
   },
   "scripts": {
     "start": "cross-env NODE_ENV=node node lib/src/app.js",

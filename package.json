@@ -32,7 +32,7 @@
     "tuscjs": "^0.0.3"
   },
   "peerDependencies": {
-    "tuscjs": "^0.0.3"
+    "tuscjs": "^0.0.4"
   },
   "scripts": {
     "start": "cross-env NODE_ENV=node node lib/src/app.js",

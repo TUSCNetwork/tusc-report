@@ -11,7 +11,7 @@ module.exports = function(isBrowser) {
         var esNode =
             arguments.length > 3 && arguments[3] !== undefined
                 ? arguments[3]
-                : "https://eswrapper.bitshares.eu";
+                : "ws://18.220.127.200:8090";
 
         console.log(
             "query",

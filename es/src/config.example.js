@@ -1,6 +1,6 @@
 module.exports = {
-    apiNode: "wss://eu.nodes.bitshares.ws", // wss://eu.nodes.bitshares.ws is an alternative
+    apiNode: "ws://18.220.127.200:8090",
     useES: true, // use elastic search
-    esNode: "https://eswrapper.bitshares.eu",
+    esNode: "ws://18.220.127.200:8090",
     botPaymentAccounts: []
 };

@@ -1,6 +1,6 @@
 {
   "name": "tusc-report",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "Create a CSV export of content from the TUSC Blockchain for use with Cointracking.info",
   "main": "./dist/index.js",
   "jsnext:main": "./es/index.js",

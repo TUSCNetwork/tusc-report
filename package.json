@@ -1,6 +1,6 @@
 {
   "name": "tusc-report",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "Create a CSV export of content from the TUSC Blockchain for use with Cointracking.info",
   "main": "./dist/index.js",
   "jsnext:main": "./es/index.js",
@@ -29,10 +29,10 @@
     "pretty-quick": "^1.4.1",
     "rimraf": "^2.6.1",
     "uglify-js": "^3.3.10",
-    "tuscjs": "^0.0.7"
+    "tuscjs": "^0.0.8"
   },
   "peerDependencies": {
-    "tuscjs": "^0.0.7"
+    "tuscjs": "^0.0.8"
   },
   "scripts": {
     "start": "cross-env NODE_ENV=node node lib/src/app.js",

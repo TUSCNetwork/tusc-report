@@ -42,9 +42,14 @@ module.exports = function(isBrowser) {
                 })
                 .then(function(result) {
                     var ops = result.map(function(r) {
+                        if ("amount_" in r.operation_history.op_object) {
+                            r.operation_history.op_object.amount =
+                                r.operation_history.op_object.amount_;
+                        }
                         return {
                             id: r.account_history.operation_id,
-                            op: JSON.parse(r.operation_history.op),
+                            op: r.operation_history.op_object,
+                            operation_type: r.operation_type,
                             result: JSON.parse(
                                 r.operation_history.operation_result
                             ),
@@ -54,7 +59,8 @@ module.exports = function(isBrowser) {
                     });
                     resolve(ops);
                 })
-                .catch(function() {
+                .catch(function(err) {
+                    console.log("getAccountHistory errror:", err);
                     resolve([]);
                 });
         });

@@ -146,8 +146,8 @@ var doWork = (function() {
                                     var timestamp = api.getBlock(
                                         record.block_num
                                     );
-                                    var type = ops[record.op[0]];
-                                    var data = record.op[1];
+                                    var type = ops[record.operation_type];
+                                    var data = record.op;
 
                                     switch (type) {
                                         default:
